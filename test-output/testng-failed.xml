@@ -6,7 +6,7 @@
       <class name="Appium.Appium.Testcase2">
         <methods>
           <include name="teardown"/>
-          <include name="LoginWithphoneNo"/>
+          <include name="wrongPhoneNumeber"/>
           <include name="startSession"/>
         </methods>
       </class> <!-- Appium.Appium.Testcase2 -->

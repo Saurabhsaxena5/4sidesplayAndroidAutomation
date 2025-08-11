@@ -95,18 +95,144 @@ public class Testcase2 {
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText"))).click();
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText")))
 				.sendKeys("8920689888");
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.ScrollView/android.widget.ImageView[2]"))).click();
-		
+		wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//android.widget.ScrollView/android.widget.ImageView[2]"))).click();
+
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@content-desc=\"Send OTP\"]")))
 				.click();
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText"))).click();
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText"))).sendKeys("1234");
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.ScrollView"))).click();
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@content-desc=\"Verify OTP\"]"))).click();
+		wait.until(
+				ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@content-desc=\"Verify OTP\"]")))
+				.click();
 		System.out.println("Login successfull");
+
+		boolean homepagevisible = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.ScrollView"))).isDisplayed();
+		if (homepagevisible = true) {
+			System.out.println("Login successfull");
+		} else {
+			System.out.println("Failed");
+		}
+
+	}
+
+	@Test
+	public void wrongPhoneNumeber() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+		// Wait for first element
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+				"//android.widget.ScrollView/android.view.View[1]/android.view.View/android.widget.ImageView[2]")))
+				.click();
+
+		// Wait for second element
+		wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//android.widget.ImageView[@content-desc=\"Watch Episode 1\"]")))
+				.click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText"))).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText")))
+				.sendKeys("8920689885");
+
+		wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//android.widget.ScrollView/android.widget.ImageView[2]"))).click();
+
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@content-desc=\"Send OTP\"]")))
+				.click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText"))).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText"))).sendKeys("1254");
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.ScrollView"))).click();
+		wait.until(
+				ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@content-desc=\"Verify OTP\"]")))
+				.click();
+
+		boolean homepagevisible = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@content-desc=\"HOME\"]")))
+				.isDisplayed();
+		if (homepagevisible = false) {
+			System.out.println("Login successfull");
+		} else {
+			System.out.println("Failed");
+		}
+	}
+
+	@Test
+	public void loginwithEmail() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+		// Wait for first element
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+				"//android.widget.ScrollView/android.view.View[1]/android.view.View/android.widget.ImageView[2]")))
+				.click();
+
+		// Wait for second element
+		wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//android.widget.ImageView[@content-desc=\"Watch Episode 1\"]")))
+				.click();
+		wait.until(
+				ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.ScrollView/android.view.View[5]")))
+				.click();
+
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText"))).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText")))
+				.sendKeys("rajnish.kumar@unvii.com");
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText"))).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@content-desc=\"Send OTP\"]")))
+				.click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText"))).click();
+
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText"))).sendKeys("1234");
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.ScrollView"))).click();
+		boolean homepagevisible = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.ScrollView"))).isDisplayed();
+		if (homepagevisible = true) {
+			System.out.println("Login successfull");
+		} else {
+			System.out.println("Failed");
+		}
+		
+
+	}
+	
+	@Test
+	public void verifywrongemailid() {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+		// Wait for first element
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+				"//android.widget.ScrollView/android.view.View[1]/android.view.View/android.widget.ImageView[2]")))
+				.click();
+
+		// Wait for second element
+		wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//android.widget.ImageView[@content-desc=\"Watch Episode 1\"]")))
+				.click();
+		wait.until(
+				ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.ScrollView/android.view.View[5]")))
+				.click();
+
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText"))).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText")))
+				.sendKeys("saurabhsaxena@unvii.com");
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText"))).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@content-desc=\"Send OTP\"]")))
+				.click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText"))).click();
+
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText"))).sendKeys("1234");
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.ScrollView"))).click();
+		boolean homepagevisible = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.ScrollView"))).isDisplayed();
+		if (homepagevisible = true) {
+			System.out.println("Login successfull");
+		} else {
+			System.out.println("Failed");
+		}
 		
 
 
+		
 	}
 
 	@AfterTest
