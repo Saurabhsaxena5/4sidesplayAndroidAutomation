@@ -51,11 +51,7 @@
 			<version>5.7.1</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>4sidesPlay</groupId>
-			<artifactId>4sidesPlay</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+	
 	</dependencies>
 
 	<build>

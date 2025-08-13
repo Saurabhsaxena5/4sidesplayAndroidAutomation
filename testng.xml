@@ -1,9 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="Appium.Appium.Login"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+	<test name="when user click on the Type">
+		<classes>
+			<class name="Appium.Appium.Login">
+				<methods>
+					<include name="clickonType" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Validate Login page is visible">
+		<classes>
+			<class name="Appium.Appium.Login">
+				<methods>
+					<include name="login" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Login with phone Number">
+		<classes>
+			<class name="Appium.Appium.Login">
+				<methods>
+					<include name="LoginWithphoneNo" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Login with wrong phone number">
+		<classes>
+			<class name="Appium.Appium.Login">
+				<methods>
+					<include name="wrongPhoneNumber" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Login with mail">
+		<classes>
+			<class name="Appium.Appium.Login">
+				<methods>
+					<include name="loginwithEmail" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="verify with mail id">
+		<classes>
+			<class name="Appium.Appium.Login">
+				<methods>
+					<include name="verifywrongemailid" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Login inside the stuff">
+		<classes>
+			<class name="Appium.Appium.Login">
+				<methods>
+					<include name="loginInStuff" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Login  the stuff">
+		<classes>
+			<class name="Appium.Appium.Login">
+				<methods>
+					<include name="Mystuff" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Login in the searchBox">
+		<classes>
+			<class name="Appium.Appium.Login">
+				<methods>
+					<include name="loginInsearchBox" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Login with the related video">
+		<classes>
+			<class name="Appium.Appium.Login">
+				<methods>
+					<include name="loginwithrealtedvideo" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

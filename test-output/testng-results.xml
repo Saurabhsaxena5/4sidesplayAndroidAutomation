@@ -1,25 +1,376 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="9" passed="1" failed="0" skipped="0">
+<testng-results ignored="90" total="100" passed="6" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-13T14:54:48 IST" name="Default suite" finished-at="2025-08-13T14:55:37 IST" duration-ms="49341">
+  <suite started-at="2025-08-13T17:53:39 IST" name="Suite" finished-at="2025-08-13T17:59:52 IST" duration-ms="373334">
     <groups>
     </groups>
-    <test started-at="2025-08-13T14:54:48 IST" name="Default test" finished-at="2025-08-13T14:55:37 IST" duration-ms="49341">
+    <test started-at="2025-08-13T17:53:39 IST" name="when user click on the Type" finished-at="2025-08-13T17:54:02 IST" duration-ms="23100">
       <class name="Appium.Appium.Login">
-        <test-method is-config="true" signature="startSession()[pri:0, instance:Appium.Appium.Login@5276d6ee]" started-at="2025-08-13T14:54:48 IST" name="startSession" finished-at="2025-08-13T14:55:07 IST" duration-ms="19100" status="PASS">
+        <test-method is-config="true" signature="startSession()[pri:0, instance:Appium.Appium.Login@17fc391b]" started-at="2025-08-13T17:53:39 IST" name="startSession" finished-at="2025-08-13T17:53:55 IST" duration-ms="16560" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startSession -->
-        <test-method signature="loginInsearchBox()[pri:0, instance:Appium.Appium.Login@5276d6ee]" started-at="2025-08-13T14:55:07 IST" name="loginInsearchBox" finished-at="2025-08-13T14:55:35 IST" duration-ms="28447" status="PASS">
+        <test-method signature="clickonType()[pri:0, instance:Appium.Appium.Login@17fc391b]" started-at="2025-08-13T17:53:55 IST" name="clickonType" finished-at="2025-08-13T17:54:01 IST" duration-ms="5326" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginInsearchBox -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Appium.Appium.Login@5276d6ee]" started-at="2025-08-13T14:55:35 IST" name="teardown" finished-at="2025-08-13T14:55:37 IST" duration-ms="1727" status="PASS">
+        </test-method> <!-- clickonType -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Appium.Appium.Login@17fc391b]" started-at="2025-08-13T17:54:01 IST" name="teardown" finished-at="2025-08-13T17:54:02 IST" duration-ms="1145" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- Appium.Appium.Login -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- when user click on the Type -->
+    <test started-at="2025-08-13T17:54:02 IST" name="Validate Login page is visible" finished-at="2025-08-13T17:54:29 IST" duration-ms="26917">
+      <class name="Appium.Appium.Login">
+        <test-method is-config="true" signature="startSession()[pri:0, instance:Appium.Appium.Login@475c9c31]" started-at="2025-08-13T17:54:02 IST" name="startSession" finished-at="2025-08-13T17:54:17 IST" duration-ms="15078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startSession -->
+        <test-method signature="login()[pri:0, instance:Appium.Appium.Login@475c9c31]" started-at="2025-08-13T17:54:17 IST" name="login" finished-at="2025-08-13T17:54:28 IST" duration-ms="10755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Appium.Appium.Login@475c9c31]" started-at="2025-08-13T17:54:28 IST" name="teardown" finished-at="2025-08-13T17:54:29 IST" duration-ms="1079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Appium.Appium.Login -->
+    </test> <!-- Validate Login page is visible -->
+    <test started-at="2025-08-13T17:54:29 IST" name="Login with phone Number" finished-at="2025-08-13T17:55:14 IST" duration-ms="44665">
+      <class name="Appium.Appium.Login">
+        <test-method is-config="true" signature="startSession()[pri:0, instance:Appium.Appium.Login@5c7bfdc1]" started-at="2025-08-13T17:54:29 IST" name="startSession" finished-at="2025-08-13T17:54:44 IST" duration-ms="15494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startSession -->
+        <test-method signature="LoginWithphoneNo()[pri:0, instance:Appium.Appium.Login@5c7bfdc1]" started-at="2025-08-13T17:54:44 IST" name="LoginWithphoneNo" finished-at="2025-08-13T17:55:12 IST" duration-ms="27960" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //android.widget.ImageView[@content-desc="Watch Episode 1"] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.FourSidesTV.ott.MainAct..., appium:appPackage: com.FourSidesTV.ott, appium:automationName: Uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.FourSidesTV.ott.MainAct..., appPackage: com.FourSidesTV.ott, automationName: Uiautomator2, deviceName: Xiaomi 23028RN4DI API 33, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 23028RN4DI, appium:deviceName: GQOR558XEMTOA6T8, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: GQOR558XEMTOA6T8, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 13, appium:statBarHeight: 50, appium:takesScreenshot: true, appium:viewportRect: {height: 1550, left: 0, top: 50, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 35d62b10-e890-4ff8-90a6-bfefe5e1baac]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //android.widget.ImageView[@content-desc="Watch Episode 1"] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.FourSidesTV.ott.MainAct..., appium:appPackage: com.FourSidesTV.ott, appium:automationName: Uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.FourSidesTV.ott.MainAct..., appPackage: com.FourSidesTV.ott, automationName: Uiautomator2, deviceName: Xiaomi 23028RN4DI API 33, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 23028RN4DI, appium:deviceName: GQOR558XEMTOA6T8, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: GQOR558XEMTOA6T8, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 13, appium:statBarHeight: 50, appium:takesScreenshot: true, appium:viewportRect: {height: 1550, left: 0, top: 50, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 35d62b10-e890-4ff8-90a6-bfefe5e1baac
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at Appium.Appium.Login.LoginWithphoneNo(Login.java:101)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginWithphoneNo -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Appium.Appium.Login@5c7bfdc1]" started-at="2025-08-13T17:55:12 IST" name="teardown" finished-at="2025-08-13T17:55:14 IST" duration-ms="1200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Appium.Appium.Login -->
+    </test> <!-- Login with phone Number -->
+    <test started-at="2025-08-13T17:55:14 IST" name="Login with wrong phone number" finished-at="2025-08-13T17:55:50 IST" duration-ms="36368">
+      <class name="Appium.Appium.Login">
+        <test-method is-config="true" signature="startSession()[pri:0, instance:Appium.Appium.Login@1b919693]" started-at="2025-08-13T17:55:14 IST" name="startSession" finished-at="2025-08-13T17:55:29 IST" duration-ms="15818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startSession -->
+        <test-method signature="wrongPhoneNumber()[pri:0, instance:Appium.Appium.Login@1b919693]" started-at="2025-08-13T17:55:29 IST" name="wrongPhoneNumber" finished-at="2025-08-13T17:55:49 IST" duration-ms="19583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongPhoneNumber -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Appium.Appium.Login@1b919693]" started-at="2025-08-13T17:55:49 IST" name="teardown" finished-at="2025-08-13T17:55:50 IST" duration-ms="961" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Appium.Appium.Login -->
+    </test> <!-- Login with wrong phone number -->
+    <test started-at="2025-08-13T17:55:50 IST" name="Login with mail" finished-at="2025-08-13T17:56:31 IST" duration-ms="41263">
+      <class name="Appium.Appium.Login">
+        <test-method is-config="true" signature="startSession()[pri:0, instance:Appium.Appium.Login@7dfd3c81]" started-at="2025-08-13T17:55:50 IST" name="startSession" finished-at="2025-08-13T17:56:05 IST" duration-ms="15428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startSession -->
+        <test-method signature="loginwithEmail()[pri:0, instance:Appium.Appium.Login@7dfd3c81]" started-at="2025-08-13T17:56:05 IST" name="loginwithEmail" finished-at="2025-08-13T17:56:30 IST" duration-ms="24695" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[The element 'By.xpath: //android.widget.ScrollView' does not exist in DOM anymore
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [b4898533-2273-45db-87ac-cfb2dae89f21, isElementDisplayed {id=00000000-0000-0a63-0000-008d00000003}]
+Capabilities {appium:appActivity: com.FourSidesTV.ott.MainAct..., appium:appPackage: com.FourSidesTV.ott, appium:automationName: Uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.FourSidesTV.ott.MainAct..., appPackage: com.FourSidesTV.ott, automationName: Uiautomator2, deviceName: Xiaomi 23028RN4DI API 33, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 23028RN4DI, appium:deviceName: GQOR558XEMTOA6T8, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: GQOR558XEMTOA6T8, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 13, appium:statBarHeight: 50, appium:takesScreenshot: true, appium:viewportRect: {height: 1550, left: 0, top: 50, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (b4898533-2273-45db-87ac-cfb2dae89f21)] -> xpath: //android.widget.ScrollView]
+Session ID: b4898533-2273-45db-87ac-cfb2dae89f21]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element 'By.xpath: //android.widget.ScrollView' does not exist in DOM anymore
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [b4898533-2273-45db-87ac-cfb2dae89f21, isElementDisplayed {id=00000000-0000-0a63-0000-008d00000003}]
+Capabilities {appium:appActivity: com.FourSidesTV.ott.MainAct..., appium:appPackage: com.FourSidesTV.ott, appium:automationName: Uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.FourSidesTV.ott.MainAct..., appPackage: com.FourSidesTV.ott, automationName: Uiautomator2, deviceName: Xiaomi 23028RN4DI API 33, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 23028RN4DI, appium:deviceName: GQOR558XEMTOA6T8, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: GQOR558XEMTOA6T8, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 13, appium:statBarHeight: 50, appium:takesScreenshot: true, appium:viewportRect: {height: 1550, left: 0, top: 50, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (b4898533-2273-45db-87ac-cfb2dae89f21)] -> xpath: //android.widget.ScrollView]
+Session ID: b4898533-2273-45db-87ac-cfb2dae89f21
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:280)
+at Appium.Appium.Login.loginwithEmail(Login.java:225)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithEmail -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Appium.Appium.Login@7dfd3c81]" started-at="2025-08-13T17:56:30 IST" name="teardown" finished-at="2025-08-13T17:56:31 IST" duration-ms="1132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Appium.Appium.Login -->
+    </test> <!-- Login with mail -->
+    <test started-at="2025-08-13T17:56:31 IST" name="verify with mail id" finished-at="2025-08-13T17:57:06 IST" duration-ms="34268">
+      <class name="Appium.Appium.Login">
+        <test-method is-config="true" signature="startSession()[pri:0, instance:Appium.Appium.Login@7d3e8655]" started-at="2025-08-13T17:56:31 IST" name="startSession" finished-at="2025-08-13T17:56:47 IST" duration-ms="15314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startSession -->
+        <test-method signature="verifywrongemailid()[pri:0, instance:Appium.Appium.Login@7d3e8655]" started-at="2025-08-13T17:56:47 IST" name="verifywrongemailid" finished-at="2025-08-13T17:57:04 IST" duration-ms="17853" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifywrongemailid -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Appium.Appium.Login@7d3e8655]" started-at="2025-08-13T17:57:04 IST" name="teardown" finished-at="2025-08-13T17:57:06 IST" duration-ms="1094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Appium.Appium.Login -->
+    </test> <!-- verify with mail id -->
+    <test started-at="2025-08-13T17:57:06 IST" name="Login inside the stuff" finished-at="2025-08-13T17:57:44 IST" duration-ms="37940">
+      <class name="Appium.Appium.Login">
+        <test-method is-config="true" signature="startSession()[pri:0, instance:Appium.Appium.Login@1f9e9475]" started-at="2025-08-13T17:57:06 IST" name="startSession" finished-at="2025-08-13T17:57:21 IST" duration-ms="15112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startSession -->
+        <test-method signature="loginInStuff()[pri:0, instance:Appium.Appium.Login@1f9e9475]" started-at="2025-08-13T17:57:21 IST" name="loginInStuff" finished-at="2025-08-13T17:57:42 IST" duration-ms="21641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginInStuff -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Appium.Appium.Login@1f9e9475]" started-at="2025-08-13T17:57:42 IST" name="teardown" finished-at="2025-08-13T17:57:44 IST" duration-ms="1183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Appium.Appium.Login -->
+    </test> <!-- Login inside the stuff -->
+    <test started-at="2025-08-13T17:57:44 IST" name="Login  the stuff" finished-at="2025-08-13T17:58:18 IST" duration-ms="34325">
+      <class name="Appium.Appium.Login">
+        <test-method is-config="true" signature="startSession()[pri:0, instance:Appium.Appium.Login@2d0399f4]" started-at="2025-08-13T17:57:44 IST" name="startSession" finished-at="2025-08-13T17:57:59 IST" duration-ms="15849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startSession -->
+        <test-method signature="Mystuff()[pri:0, instance:Appium.Appium.Login@2d0399f4]" started-at="2025-08-13T17:57:59 IST" name="Mystuff" finished-at="2025-08-13T17:58:17 IST" duration-ms="17390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mystuff -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Appium.Appium.Login@2d0399f4]" started-at="2025-08-13T17:58:17 IST" name="teardown" finished-at="2025-08-13T17:58:18 IST" duration-ms="1081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Appium.Appium.Login -->
+    </test> <!-- Login  the stuff -->
+    <test started-at="2025-08-13T17:58:18 IST" name="Login in the searchBox" finished-at="2025-08-13T17:59:02 IST" duration-ms="43884">
+      <class name="Appium.Appium.Login">
+        <test-method is-config="true" signature="startSession()[pri:0, instance:Appium.Appium.Login@5dafbe45]" started-at="2025-08-13T17:58:18 IST" name="startSession" finished-at="2025-08-13T17:58:33 IST" duration-ms="15556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startSession -->
+        <test-method signature="loginInsearchBox()[pri:0, instance:Appium.Appium.Login@5dafbe45]" started-at="2025-08-13T17:58:33 IST" name="loginInsearchBox" finished-at="2025-08-13T17:59:01 IST" duration-ms="27193" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //android.widget.FrameLayout[@resource-id='android:id/content']/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[3]/android.view.View/android.view.View/android.widget.ImageView[2] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.FourSidesTV.ott.MainAct..., appium:appPackage: com.FourSidesTV.ott, appium:automationName: Uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.FourSidesTV.ott.MainAct..., appPackage: com.FourSidesTV.ott, automationName: Uiautomator2, deviceName: Xiaomi 23028RN4DI API 33, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 23028RN4DI, appium:deviceName: GQOR558XEMTOA6T8, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: GQOR558XEMTOA6T8, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 13, appium:statBarHeight: 50, appium:takesScreenshot: true, appium:viewportRect: {height: 1550, left: 0, top: 50, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: fa08612e-1240-449f-8c5c-1111ea1057bd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //android.widget.FrameLayout[@resource-id='android:id/content']/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[3]/android.view.View/android.view.View/android.widget.ImageView[2] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.FourSidesTV.ott.MainAct..., appium:appPackage: com.FourSidesTV.ott, appium:automationName: Uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.FourSidesTV.ott.MainAct..., appPackage: com.FourSidesTV.ott, automationName: Uiautomator2, deviceName: Xiaomi 23028RN4DI API 33, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 23028RN4DI, appium:deviceName: GQOR558XEMTOA6T8, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: GQOR558XEMTOA6T8, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 13, appium:statBarHeight: 50, appium:takesScreenshot: true, appium:viewportRect: {height: 1550, left: 0, top: 50, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: fa08612e-1240-449f-8c5c-1111ea1057bd
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at Appium.Appium.Login.loginInsearchBox(Login.java:373)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginInsearchBox -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Appium.Appium.Login@5dafbe45]" started-at="2025-08-13T17:59:01 IST" name="teardown" finished-at="2025-08-13T17:59:02 IST" duration-ms="1130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Appium.Appium.Login -->
+    </test> <!-- Login in the searchBox -->
+    <test started-at="2025-08-13T17:59:02 IST" name="Login with the related video" finished-at="2025-08-13T17:59:52 IST" duration-ms="50376">
+      <class name="Appium.Appium.Login">
+        <test-method is-config="true" signature="startSession()[pri:0, instance:Appium.Appium.Login@f68f0dc]" started-at="2025-08-13T17:59:02 IST" name="startSession" finished-at="2025-08-13T17:59:18 IST" duration-ms="16218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startSession -->
+        <test-method signature="loginwithrealtedvideo()[pri:0, instance:Appium.Appium.Login@f68f0dc]" started-at="2025-08-13T17:59:18 IST" name="loginwithrealtedvideo" finished-at="2025-08-13T17:59:51 IST" duration-ms="33088" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //android.widget.EditText (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.FourSidesTV.ott.MainAct..., appium:appPackage: com.FourSidesTV.ott, appium:automationName: Uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.FourSidesTV.ott.MainAct..., appPackage: com.FourSidesTV.ott, automationName: Uiautomator2, deviceName: Xiaomi 23028RN4DI API 33, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 23028RN4DI, appium:deviceName: GQOR558XEMTOA6T8, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: GQOR558XEMTOA6T8, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 13, appium:statBarHeight: 50, appium:takesScreenshot: true, appium:viewportRect: {height: 1550, left: 0, top: 50, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 8735021a-a41c-4485-8b32-c770d61f539a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //android.widget.EditText (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.FourSidesTV.ott.MainAct..., appium:appPackage: com.FourSidesTV.ott, appium:automationName: Uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.FourSidesTV.ott.MainAct..., appPackage: com.FourSidesTV.ott, automationName: Uiautomator2, deviceName: Xiaomi 23028RN4DI API 33, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 23028RN4DI, appium:deviceName: GQOR558XEMTOA6T8, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: GQOR558XEMTOA6T8, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 13, appium:statBarHeight: 50, appium:takesScreenshot: true, appium:viewportRect: {height: 1550, left: 0, top: 50, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 8735021a-a41c-4485-8b32-c770d61f539a
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at Appium.Appium.Login.loginwithrealtedvideo(Login.java:432)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithrealtedvideo -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Appium.Appium.Login@f68f0dc]" started-at="2025-08-13T17:59:51 IST" name="teardown" finished-at="2025-08-13T17:59:52 IST" duration-ms="1063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Appium.Appium.Login -->
+    </test> <!-- Login with the related video -->
+  </suite> <!-- Suite -->
 </testng-results>

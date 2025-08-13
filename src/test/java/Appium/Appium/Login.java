@@ -10,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -20,8 +21,11 @@ import io.appium.java_client.android.nativekey.KeyEvent;
 
 public class Login {
 
-	private AndroidDriver driver;
+	private AndroidDriver driver1;
 	WebDriver wait;
+	  private AndroidDriver driver;
+	    private final String APP_PACKAGE = "com.FourSidesTV.ott";
+	    private final String APP_ACTIVITY = "com.FourSidesTV.ott.MainActivity";
 
 	@BeforeMethod
 	public void startSession() {
@@ -29,17 +33,18 @@ public class Login {
 			DesiredCapabilities dc = new DesiredCapabilities();
 			dc.setCapability("platformName", "Android");
 			dc.setCapability("appium:deviceName", "Xiaomi 23028RN4DI API 33");
-			dc.setCapability("appium:automationName", "uiautomator2");
+			dc.setCapability("appium:automationName", "Uiautomator2");
 			dc.setCapability("appium:appPackage", "com.FourSidesTV.ott");
 			dc.setCapability("appium:appActivity", "com.FourSidesTV.ott.MainActivity");
 
 			// ✅ Use correct URL for Appium 2.x
 			URL url = new URL("http://127.0.0.1:4723"); // no /wd/hub for Appium 2
 
-			driver = new AndroidDriver(url, dc);
+			driver1 = new AndroidDriver(url, dc);
 			System.out.println("Session started successfully.");
+			
 
-			driver.findElement(By.xpath(
+			driver1.findElement(By.xpath(
 					"//android.widget.Button[@resource-id=\"com.android.permissioncontroller:id/permission_allow_button\"]"))
 					.click();
 
@@ -53,13 +58,13 @@ public class Login {
 	@Test
 	public void clickonType() throws InterruptedException {
 		Thread.sleep(4000);
-		driver.findElement(By.xpath("//android.view.View[@content-desc=\"Movies\"]")).click();
+		driver1.findElement(By.xpath("//android.view.View[@content-desc=\"Movies\"]")).click();
 
 	}
 
 	@Test
 	public void login() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		WebDriverWait wait = new WebDriverWait(driver1, Duration.ofSeconds(15));
 
 		// Wait for first element
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
@@ -85,7 +90,7 @@ public class Login {
 
 	@Test
 	public void LoginWithphoneNo() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		WebDriverWait wait = new WebDriverWait(driver1, Duration.ofSeconds(15));
 
 		// Wait for first element
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
@@ -124,7 +129,7 @@ public class Login {
 
 	@Test
 	public void wrongPhoneNumber() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		WebDriverWait wait = new WebDriverWait(driver1, Duration.ofSeconds(15));
 
 		// Wait for first element
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
@@ -163,7 +168,7 @@ public class Login {
 				.click();
 
 		// ✅ Check homepage without waiting for it
-		boolean homepageVisible = driver.findElements(By.xpath(
+		boolean homepageVisible = driver1.findElements(By.xpath(
 				"//android.widget.FrameLayout[@resource-id='android:id/content']/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.ImageView"))
 				.size() > 0;
 
@@ -176,7 +181,7 @@ public class Login {
 
 	@Test
 	public void loginwithEmail() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		WebDriverWait wait = new WebDriverWait(driver1, Duration.ofSeconds(15));
 
 		// Click first element
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
@@ -228,7 +233,7 @@ public class Login {
 
 	@Test
 	public void verifywrongemailid() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		WebDriverWait wait = new WebDriverWait(driver1, Duration.ofSeconds(15));
 
 		// Click first element
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
@@ -264,7 +269,7 @@ public class Login {
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.ScrollView"))).click();
 
 		// ✅ Check if homepage element exists without failing
-		boolean homepageVisible = driver.findElements(By.xpath(
+		boolean homepageVisible = driver1.findElements(By.xpath(
 				"//android.widget.FrameLayout[@resource-id='android:id/content']/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.ImageView"))
 				.size() > 0;
 
@@ -277,7 +282,7 @@ public class Login {
 
 	@Test
 	public void loginInStuff() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebDriverWait wait = new WebDriverWait(driver1, Duration.ofSeconds(20));
 
 		// Match using contains to avoid newline issues
 		WebElement clickOnMyStuff = wait.until(ExpectedConditions
@@ -313,7 +318,7 @@ public class Login {
 
 	@Test
 	public void Mystuff() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebDriverWait wait = new WebDriverWait(driver1, Duration.ofSeconds(20));
 
 		WebElement clickOnMyStuff = wait.until(ExpectedConditions
 				.elementToBeClickable(By.xpath("//android.widget.ImageView[contains(@content-desc,'My Stuff')]")));
@@ -348,7 +353,7 @@ public class Login {
 
 	@Test
 	public void loginInsearchBox() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		WebDriverWait wait = new WebDriverWait(driver1, Duration.ofSeconds(20));
 
 		// Step 1: Click the "Find" button
 		wait.until(ExpectedConditions
@@ -362,7 +367,7 @@ public class Login {
 				.sendKeys("Hello pooja");
 
 		// Step 3.5: Press ENTER using Android key event
-		((AndroidDriver) driver).longPressKey(new KeyEvent(AndroidKey.ENTER));
+		((AndroidDriver) driver1).longPressKey(new KeyEvent(AndroidKey.ENTER));
 
 		// Step 4: Wait for the next element to appear and click it
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
@@ -395,11 +400,78 @@ public class Login {
 		}
 
 	}
+	
+	@Test
+	public void loginwithrealtedvideo() {
+		
+		WebDriverWait wait = new WebDriverWait(driver1, Duration.ofSeconds(20));
 
-	@AfterTest
+		// Step 1: Click the "Find" button
+		wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//android.widget.ImageView[contains(@content-desc,'Find')]"))).click();
+
+		// Step 2: Click search box
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText"))).click();
+
+		// Step 3: Type text
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.EditText")))
+				.sendKeys("Hello pooja");
+
+		// Step 3.5: Press ENTER using Android key event
+		((AndroidDriver) driver1).longPressKey(new KeyEvent(AndroidKey.ENTER));
+		
+		
+
+		// Step 4: Wait for the next element to appear and click it
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+				"//android.widget.FrameLayout[@resource-id='android:id/content']/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[3]/android.view.View/android.view.View/android.widget.ImageView[2]")))
+				.click();
+		Duration.ofSeconds(15);
+		wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//android.widget.ScrollView/android.view.View[11]/android.view.View/android.widget.ImageView[1]"))).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText"))).click();
+		
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.ImageView[@content-desc=\"Watch Now\"]"))).click();
+		
+		
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText")))
+				.sendKeys("8920689888");
+		wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//android.widget.ScrollView/android.widget.ImageView[2]"))).click();
+
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@content-desc=\"Send OTP\"]")))
+				.click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText"))).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.EditText"))).sendKeys("1234");
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.ScrollView"))).click();
+		wait.until(
+				ExpectedConditions.elementToBeClickable(By.xpath("//android.view.View[@content-desc=\"Verify OTP\"]")))
+				.click();
+
+		boolean homepagevisible = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.ScrollView"))).isDisplayed();
+		if (homepagevisible = true) {
+			System.out.println("Login successfull");
+		} else {
+			System.out.println("Failed");
+		}
+		
+		
+	}
+	
+	/*
+	 * @AfterMethod public void closeApp() { // Kill the app after each test
+	 * driver.terminateApp(APP_PACKAGE);
+	 * System.out.println("App closed after test."); }
+	 */
+	
+
+	@AfterMethod
 	public void teardown() {
-		if (driver != null) {
-			driver.quit();
+		if (driver1 != null) {
+			driver1.quit();
+			
+			
 		}
 	}
 }

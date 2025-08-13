@@ -5,7 +5,12 @@
     <classes>
       <class name="Appium.Appium.Login">
         <methods>
+          <include name="login"/>
+          <include name="loginwithEmail"/>
+          <include name="loginwithrealtedvideo"/>
+          <include name="verifywrongemailid"/>
           <include name="startSession"/>
+          <include name="wrongPhoneNumber"/>
           <include name="loginInsearchBox"/>
           <include name="teardown"/>
         </methods>

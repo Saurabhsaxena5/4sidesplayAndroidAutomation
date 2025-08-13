@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Yash\AppData\Local\Temp\testng-eclipse-767624918\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\Yash\.eclipse\Appium\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">10 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,21 +92,75 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">10 methods, 4 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Appium.Appium.Login" class="method navigator-link" hash-for-method="LoginWithphoneNo">LoginWithphoneNo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Appium.Appium.Login" class="method navigator-link" hash-for-method="loginInsearchBox">loginInsearchBox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Appium.Appium.Login" class="method navigator-link" hash-for-method="loginwithEmail">loginwithEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Appium.Appium.Login" class="method navigator-link" hash-for-method="loginwithrealtedvideo">loginwithrealtedvideo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Appium.Appium.Login" class="method navigator-link" hash-for-method="loginInsearchBox">loginInsearchBox</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Appium.Appium.Login" class="method navigator-link" hash-for-method="Mystuff">Mystuff</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Appium.Appium.Login" class="method navigator-link" hash-for-method="clickonType">clickonType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Appium.Appium.Login" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Appium.Appium.Login" class="method navigator-link" hash-for-method="loginInStuff">loginInStuff</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Appium.Appium.Login" class="method navigator-link" hash-for-method="verifywrongemailid">verifywrongemailid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Appium.Appium.Login" class="method navigator-link" hash-for-method="wrongPhoneNumber">wrongPhoneNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,8 +171,101 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Appium.Appium.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginWithphoneNo">
+                  </a> <!-- LoginWithphoneNo -->
+                  <span class="method-name">LoginWithphoneNo</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //android.widget.ImageView[@content-desc=&quot;Watch Episode 1&quot;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.FourSidesTV.ott.MainAct..., appium:appPackage: com.FourSidesTV.ott, appium:automationName: Uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.FourSidesTV.ott.MainAct..., appPackage: com.FourSidesTV.ott, automationName: Uiautomator2, deviceName: Xiaomi 23028RN4DI API 33, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 23028RN4DI, appium:deviceName: GQOR558XEMTOA6T8, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: GQOR558XEMTOA6T8, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 13, appium:statBarHeight: 50, appium:takesScreenshot: true, appium:viewportRect: {height: 1550, left: 0, top: 50, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 35d62b10-e890-4ff8-90a6-bfefe5e1baac
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at Appium.Appium.Login.LoginWithphoneNo(Login.java:101)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginInsearchBox">
+                  </a> <!-- loginInsearchBox -->
+                  <span class="method-name">loginInsearchBox</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //android.widget.FrameLayout[@resource-id=&apos;android:id/content&apos;]/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[3]/android.view.View/android.view.View/android.widget.ImageView[2] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.FourSidesTV.ott.MainAct..., appium:appPackage: com.FourSidesTV.ott, appium:automationName: Uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.FourSidesTV.ott.MainAct..., appPackage: com.FourSidesTV.ott, automationName: Uiautomator2, deviceName: Xiaomi 23028RN4DI API 33, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 23028RN4DI, appium:deviceName: GQOR558XEMTOA6T8, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: GQOR558XEMTOA6T8, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 13, appium:statBarHeight: 50, appium:takesScreenshot: true, appium:viewportRect: {height: 1550, left: 0, top: 50, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: fa08612e-1240-449f-8c5c-1111ea1057bd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at Appium.Appium.Login.loginInsearchBox(Login.java:373)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginwithEmail">
+                  </a> <!-- loginwithEmail -->
+                  <span class="method-name">loginwithEmail</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: The element &apos;By.xpath: //android.widget.ScrollView&apos; does not exist in DOM anymore
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [b4898533-2273-45db-87ac-cfb2dae89f21, isElementDisplayed {id=00000000-0000-0a63-0000-008d00000003}]
+Capabilities {appium:appActivity: com.FourSidesTV.ott.MainAct..., appium:appPackage: com.FourSidesTV.ott, appium:automationName: Uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.FourSidesTV.ott.MainAct..., appPackage: com.FourSidesTV.ott, automationName: Uiautomator2, deviceName: Xiaomi 23028RN4DI API 33, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 23028RN4DI, appium:deviceName: GQOR558XEMTOA6T8, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: GQOR558XEMTOA6T8, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 13, appium:statBarHeight: 50, appium:takesScreenshot: true, appium:viewportRect: {height: 1550, left: 0, top: 50, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Element: [[AndroidDriver:  on ANDROID (b4898533-2273-45db-87ac-cfb2dae89f21)] -&gt; xpath: //android.widget.ScrollView]
+Session ID: b4898533-2273-45db-87ac-cfb2dae89f21
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:280)
+	at Appium.Appium.Login.loginwithEmail(Login.java:225)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginwithrealtedvideo">
+                  </a> <!-- loginwithrealtedvideo -->
+                  <span class="method-name">loginwithrealtedvideo</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //android.widget.EditText (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.FourSidesTV.ott.MainAct..., appium:appPackage: com.FourSidesTV.ott, appium:automationName: Uiautomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.FourSidesTV.ott.MainAct..., appPackage: com.FourSidesTV.ott, automationName: Uiautomator2, deviceName: Xiaomi 23028RN4DI API 33, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 23028RN4DI, appium:deviceName: GQOR558XEMTOA6T8, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: GQOR558XEMTOA6T8, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 13, appium:statBarHeight: 50, appium:takesScreenshot: true, appium:viewportRect: {height: 1550, left: 0, top: 50, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 8735021a-a41c-4485-8b32-c770d61f539a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at Appium.Appium.Login.loginwithrealtedvideo(Login.java:432)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">Appium.Appium.Login</span>
@@ -126,24 +273,131 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginInsearchBox">
-                  </a> <!-- loginInsearchBox -->
-                  <span class="method-name">loginInsearchBox</span>
+                  <a name="Mystuff">
+                  </a> <!-- Mystuff -->
+                  <span class="method-name">Mystuff</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickonType">
+                  </a> <!-- clickonType -->
+                  <span class="method-name">clickonType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginInStuff">
+                  </a> <!-- loginInStuff -->
+                  <span class="method-name">loginInStuff</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifywrongemailid">
+                  </a> <!-- verifywrongemailid -->
+                  <span class="method-name">verifywrongemailid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="wrongPhoneNumber">
+                  </a> <!-- wrongPhoneNumber -->
+                  <span class="method-name">wrongPhoneNumber</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Yash\AppData\Local\Temp\testng-eclipse-767624918\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Yash\.eclipse\Appium\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;when user click on the Type&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Appium.Appium.Login&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;clickonType&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Appium.Appium.Login --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- when user click on the Type --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Validate Login page is visible&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Appium.Appium.Login&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;login&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Appium.Appium.Login --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Validate Login page is visible --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login with phone Number&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Appium.Appium.Login&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;LoginWithphoneNo&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Appium.Appium.Login --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login with phone Number --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login with wrong phone number&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Appium.Appium.Login&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;wrongPhoneNumber&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Appium.Appium.Login --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login with wrong phone number --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login with mail&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Appium.Appium.Login&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;loginwithEmail&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Appium.Appium.Login --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login with mail --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;verify with mail id&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Appium.Appium.Login&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;verifywrongemailid&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Appium.Appium.Login --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- verify with mail id --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login inside the stuff&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Appium.Appium.Login&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;loginInStuff&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Appium.Appium.Login --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login inside the stuff --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login  the stuff&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Appium.Appium.Login&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;Mystuff&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Appium.Appium.Login --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login  the stuff --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login in the searchBox&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Appium.Appium.Login&quot;&gt;
         &lt;methods&gt;
@@ -151,95 +405,331 @@
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- Appium.Appium.Login --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Login in the searchBox --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login with the related video&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Appium.Appium.Login&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;loginwithrealtedvideo&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Appium.Appium.Login --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login with the related video --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">when user click on the Type (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Validate Login page is visible (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Login with phone Number (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Login with wrong phone number (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Login with mail (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">verify with mail id (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Login inside the stuff (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Login  the stuff (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Login in the searchBox (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Login with the related video (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginInsearchBox')
+data.setCell(0, 1, 'loginwithrealtedvideo')
 data.setCell(0, 2, 'Appium.Appium.Login')
-data.setCell(0, 3, 28447);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 3, 33088);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'LoginWithphoneNo')
+data.setCell(1, 2, 'Appium.Appium.Login')
+data.setCell(1, 3, 27960);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'loginInsearchBox')
+data.setCell(2, 2, 'Appium.Appium.Login')
+data.setCell(2, 3, 27193);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'loginwithEmail')
+data.setCell(3, 2, 'Appium.Appium.Login')
+data.setCell(3, 3, 24695);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginInStuff')
+data.setCell(4, 2, 'Appium.Appium.Login')
+data.setCell(4, 3, 21641);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'wrongPhoneNumber')
+data.setCell(5, 2, 'Appium.Appium.Login')
+data.setCell(5, 3, 19583);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifywrongemailid')
+data.setCell(6, 2, 'Appium.Appium.Login')
+data.setCell(6, 3, 17853);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Mystuff')
+data.setCell(7, 2, 'Appium.Appium.Login')
+data.setCell(7, 3, 17390);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'login')
+data.setCell(8, 2, 'Appium.Appium.Login')
+data.setCell(8, 3, 10755);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'clickonType')
+data.setCell(9, 2, 'Appium.Appium.Login')
+data.setCell(9, 3, 5326);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">8 ignored methods</span>
+            <span class="header-content">90 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">Appium.Appium.Login</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">login</span>
-                <br/>
                 <span class="ignored-method-name">LoginWithphoneNo</span>
+                <br/>
+                <span class="ignored-method-name">loginInStuff</span>
+                <br/>
+                <span class="ignored-method-name">loginInStuff</span>
+                <br/>
+                <span class="ignored-method-name">verifywrongemailid</span>
                 <br/>
                 <span class="ignored-method-name">Mystuff</span>
                 <br/>
-                <span class="ignored-method-name">wrongPhoneNumber</span>
+                <span class="ignored-method-name">Mystuff</span>
+                <br/>
+                <span class="ignored-method-name">LoginWithphoneNo</span>
+                <br/>
+                <span class="ignored-method-name">loginInsearchBox</span>
+                <br/>
+                <span class="ignored-method-name">Mystuff</span>
+                <br/>
+                <span class="ignored-method-name">login</span>
+                <br/>
+                <span class="ignored-method-name">loginInsearchBox</span>
+                <br/>
+                <span class="ignored-method-name">verifywrongemailid</span>
+                <br/>
+                <span class="ignored-method-name">loginInStuff</span>
                 <br/>
                 <span class="ignored-method-name">loginwithEmail</span>
                 <br/>
-                <span class="ignored-method-name">verifywrongemailid</span>
+                <span class="ignored-method-name">Mystuff</span>
+                <br/>
+                <span class="ignored-method-name">loginwithrealtedvideo</span>
+                <br/>
+                <span class="ignored-method-name">wrongPhoneNumber</span>
+                <br/>
+                <span class="ignored-method-name">login</span>
+                <br/>
+                <span class="ignored-method-name">loginInsearchBox</span>
+                <br/>
+                <span class="ignored-method-name">loginInsearchBox</span>
+                <br/>
+                <span class="ignored-method-name">loginwithEmail</span>
                 <br/>
                 <span class="ignored-method-name">clickonType</span>
                 <br/>
                 <span class="ignored-method-name">loginInStuff</span>
                 <br/>
+                <span class="ignored-method-name">wrongPhoneNumber</span>
+                <br/>
+                <span class="ignored-method-name">LoginWithphoneNo</span>
+                <br/>
+                <span class="ignored-method-name">Mystuff</span>
+                <br/>
+                <span class="ignored-method-name">loginInStuff</span>
+                <br/>
+                <span class="ignored-method-name">login</span>
+                <br/>
+                <span class="ignored-method-name">loginInsearchBox</span>
+                <br/>
+                <span class="ignored-method-name">loginwithEmail</span>
+                <br/>
+                <span class="ignored-method-name">clickonType</span>
+                <br/>
+                <span class="ignored-method-name">clickonType</span>
+                <br/>
+                <span class="ignored-method-name">clickonType</span>
+                <br/>
+                <span class="ignored-method-name">loginwithEmail</span>
+                <br/>
+                <span class="ignored-method-name">loginwithEmail</span>
+                <br/>
+                <span class="ignored-method-name">wrongPhoneNumber</span>
+                <br/>
+                <span class="ignored-method-name">login</span>
+                <br/>
+                <span class="ignored-method-name">loginwithEmail</span>
+                <br/>
+                <span class="ignored-method-name">loginInStuff</span>
+                <br/>
+                <span class="ignored-method-name">login</span>
+                <br/>
+                <span class="ignored-method-name">login</span>
+                <br/>
+                <span class="ignored-method-name">loginwithrealtedvideo</span>
+                <br/>
+                <span class="ignored-method-name">wrongPhoneNumber</span>
+                <br/>
+                <span class="ignored-method-name">Mystuff</span>
+                <br/>
+                <span class="ignored-method-name">verifywrongemailid</span>
+                <br/>
+                <span class="ignored-method-name">login</span>
+                <br/>
+                <span class="ignored-method-name">loginwithEmail</span>
+                <br/>
+                <span class="ignored-method-name">loginInsearchBox</span>
+                <br/>
+                <span class="ignored-method-name">loginInStuff</span>
+                <br/>
+                <span class="ignored-method-name">Mystuff</span>
+                <br/>
+                <span class="ignored-method-name">loginwithrealtedvideo</span>
+                <br/>
+                <span class="ignored-method-name">wrongPhoneNumber</span>
+                <br/>
+                <span class="ignored-method-name">LoginWithphoneNo</span>
+                <br/>
+                <span class="ignored-method-name">verifywrongemailid</span>
+                <br/>
+                <span class="ignored-method-name">LoginWithphoneNo</span>
+                <br/>
+                <span class="ignored-method-name">loginInsearchBox</span>
+                <br/>
+                <span class="ignored-method-name">Mystuff</span>
+                <br/>
+                <span class="ignored-method-name">loginwithEmail</span>
+                <br/>
+                <span class="ignored-method-name">verifywrongemailid</span>
+                <br/>
+                <span class="ignored-method-name">loginwithrealtedvideo</span>
+                <br/>
+                <span class="ignored-method-name">Mystuff</span>
+                <br/>
+                <span class="ignored-method-name">LoginWithphoneNo</span>
+                <br/>
+                <span class="ignored-method-name">loginInsearchBox</span>
+                <br/>
+                <span class="ignored-method-name">LoginWithphoneNo</span>
+                <br/>
+                <span class="ignored-method-name">clickonType</span>
+                <br/>
+                <span class="ignored-method-name">clickonType</span>
+                <br/>
+                <span class="ignored-method-name">verifywrongemailid</span>
+                <br/>
+                <span class="ignored-method-name">wrongPhoneNumber</span>
+                <br/>
+                <span class="ignored-method-name">login</span>
+                <br/>
+                <span class="ignored-method-name">wrongPhoneNumber</span>
+                <br/>
+                <span class="ignored-method-name">LoginWithphoneNo</span>
+                <br/>
+                <span class="ignored-method-name">loginwithrealtedvideo</span>
+                <br/>
+                <span class="ignored-method-name">login</span>
+                <br/>
+                <span class="ignored-method-name">loginInsearchBox</span>
+                <br/>
+                <span class="ignored-method-name">clickonType</span>
+                <br/>
+                <span class="ignored-method-name">verifywrongemailid</span>
+                <br/>
+                <span class="ignored-method-name">loginInStuff</span>
+                <br/>
+                <span class="ignored-method-name">loginwithrealtedvideo</span>
+                <br/>
+                <span class="ignored-method-name">verifywrongemailid</span>
+                <br/>
+                <span class="ignored-method-name">loginwithrealtedvideo</span>
+                <br/>
+                <span class="ignored-method-name">loginwithrealtedvideo</span>
+                <br/>
+                <span class="ignored-method-name">LoginWithphoneNo</span>
+                <br/>
+                <span class="ignored-method-name">loginInStuff</span>
+                <br/>
+                <span class="ignored-method-name">wrongPhoneNumber</span>
+                <br/>
+                <span class="ignored-method-name">loginwithrealtedvideo</span>
+                <br/>
+                <span class="ignored-method-name">clickonType</span>
+                <br/>
+                <span class="ignored-method-name">verifywrongemailid</span>
+                <br/>
+                <span class="ignored-method-name">clickonType</span>
+                <br/>
+                <span class="ignored-method-name">loginwithEmail</span>
+                <br/>
+                <span class="ignored-method-name">wrongPhoneNumber</span>
+                <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -251,13 +741,129 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginInsearchBox</span>
-                <span class="method-start">19103 ms</span>
+                <span class="method-name">clickonType</span>
+                <span class="method-start">16561 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
+              <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">47565 ms</span>
-              </div> <!-- configuration-test after -->
+                <span class="method-start">21894 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startSession</span>
+                <span class="method-start">23157 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login</span>
+                <span class="method-start">38235 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">48993 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startSession</span>
+                <span class="method-start">50087 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoginWithphoneNo</span>
+                <span class="method-start">65582 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">93546 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startSession</span>
+                <span class="method-start">94776 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">wrongPhoneNumber</span>
+                <span class="method-start">110595 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">130180 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startSession</span>
+                <span class="method-start">131158 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginwithEmail</span>
+                <span class="method-start">146587 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">171285 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startSession</span>
+                <span class="method-start">172434 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifywrongemailid</span>
+                <span class="method-start">187748 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">205604 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startSession</span>
+                <span class="method-start">206713 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginInStuff</span>
+                <span class="method-start">221825 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">243468 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startSession</span>
+                <span class="method-start">244664 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Mystuff</span>
+                <span class="method-start">260514 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">277905 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startSession</span>
+                <span class="method-start">278999 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginInsearchBox</span>
+                <span class="method-start">294555 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">321752 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startSession</span>
+                <span class="method-start">322901 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginwithrealtedvideo</span>
+                <span class="method-start">339119 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">372211 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
