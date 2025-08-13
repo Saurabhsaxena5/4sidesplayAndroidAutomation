@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Appium.Appium.Testcase2">
+      <class name="Appium.Appium.Login">
         <methods>
-          <include name="teardown"/>
-          <include name="wrongPhoneNumeber"/>
           <include name="startSession"/>
+          <include name="loginInsearchBox"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- Appium.Appium.Testcase2 -->
+      </class> <!-- Appium.Appium.Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
